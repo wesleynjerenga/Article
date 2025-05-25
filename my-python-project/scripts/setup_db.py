@@ -32,8 +32,4 @@ def setup():
     print("Database initialized.")
 
 if __name__ == "__main__":
-    database_path = 'my_database.db'  # Specify your database file name
-    setup_database(database_path)
-    seed_database(database_path)
     setup()
-    print("Database setup and seeded successfully.")
