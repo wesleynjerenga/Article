@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#641f32">
+  <meta name="description" content="View your campus food order status and collection token.">
+  <title>My Order — Find My Spot</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="Find My Spot home"><span class="brand-mark">f.</span><span>find my <strong>spot</strong></span></a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a class="nav-link" href="index.html">Discover</a><a class="nav-link" href="menu.html">Menu</a><a class="nav-link" href="checkout.html">Checkout</a><a class="nav-link active" aria-current="page" href="order.html">My order</a><a class="nav-link" href="vendors.html">For vendors</a>
+    </nav>
+    <a class="cart-link" href="checkout.html" aria-label="Shopping bag, 2 items"><span class="cart-icon" aria-hidden="true">▱</span><span class="cart-label">My bag</span><span class="cart-count">2</span></a>
+  </header>
+  <main class="order-page">
+    <section class="progress-section page-wrap">
+      <div class="section-heading"><div><p class="eyebrow">NO QUEUE, JUST GOOD TIMING</p><h1>Your order, in progress</h1></div><span class="order-reference">ORDER · #042</span></div>
+      <div class="progress-card">
+        <div class="progress-main">
+          <div class="confirmed-banner"><span class="checkmark">✓</span><div><h3>Order confirmed!</h3><p>Your coffee crew is on it.</p></div><span class="demo-tag">DEMO TRACKER</span></div>
+          <div class="stepper"><div class="step complete"><span>✓</span><p>Received</p></div><div class="step-line filled"></div><div class="step current"><span>Ⅱ</span><p>Preparing</p></div><div class="step-line"></div><div class="step"><span>3</span><p>Ready for pickup</p></div><div class="step-line"></div><div class="step"><span>4</span><p>Picked up</p></div></div>
+          <div class="eta-box"><span class="eta-icon">◷</span><div><span class="eyebrow">ESTIMATED PICKUP</span><strong>Your food will be ready in about <em>9 minutes.</em></strong></div><span class="pickup-time">1:15 pm</span></div>
+        </div>
+        <div class="token-panel"><p class="eyebrow">SHOW THIS AT THE COUNTER</p><div class="token-number">042<span>A</span></div><div class="fake-qr" role="img" aria-label="Decorative QR code placeholder"><span class="qr-corner top-left"></span><span class="qr-corner top-right"></span><span class="qr-corner bottom-left"></span><span class="qr-pattern"></span></div><p class="token-caption">COLLECTION TOKEN</p><span class="token-disclaimer">Demo ticket · Not valid for collection</span></div>
+      </div>
+      <p class="demo-note">This is a visual demo. Order status and collection token are not connected to a live vendor.</p>
+      <a class="text-link order-discover-link" href="index.html">← &nbsp;Back to campus food</a>
+    </section>
+  </main>
+  <footer class="footer"><a class="brand footer-brand" href="index.html"><span class="brand-mark">f.</span><span>find my <strong>spot</strong></span></a><p>Campus food, minus the wait. <span>Made for Strathmore.</span></p><a href="index.html">Back to discover ↑</a></footer>
+</body>
+</html>

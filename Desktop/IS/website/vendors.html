@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#641f32">
+  <meta name="description" content="Kitchen order dashboard mockup for Find My Spot campus food vendors.">
+  <title>Vendor Dashboard — Find My Spot</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="Find My Spot home"><span class="brand-mark">f.</span><span>find my <strong>spot</strong></span></a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a class="nav-link" href="index.html">Discover</a><a class="nav-link" href="menu.html">Menu</a><a class="nav-link" href="checkout.html">Checkout</a><a class="nav-link" href="order.html">My order</a><a class="nav-link active" aria-current="page" href="vendors.html">For vendors</a>
+    </nav>
+    <a class="cart-link" href="checkout.html" aria-label="Shopping bag, 2 items"><span class="cart-icon" aria-hidden="true">▱</span><span class="cart-label">My bag</span><span class="cart-count">2</span></a>
+  </header>
+  <main class="vendor-page">
+    <section class="kitchen-section page-wrap">
+      <div class="section-heading"><div><p class="eyebrow">A CALMER COUNTER STARTS HERE</p><h1>Kitchen dashboard</h1></div><span class="dashboard-label"><span class="status-dot green"></span> SU Main Coffee Station · Staff view</span></div>
+      <div class="kitchen-board">
+        <div class="kitchen-column">
+          <div class="column-heading"><span class="column-indicator incoming"></span><h3>New orders</h3><span class="column-count">02</span></div>
+          <article class="kitchen-order"><div class="kitchen-order-top"><span class="order-token">#042A</span><span>just now</span></div><p>Iced Caramel Latte <span>× 1</span></p><p>Butter Croissant <span>× 1</span></p><div class="order-total">KES 370</div><button type="button" class="kitchen-button">♨ &nbsp;Accept &amp; start cooking</button></article>
+          <article class="kitchen-order compact-order"><div class="kitchen-order-top"><span class="order-token">#041C</span><span>2 min ago</span></div><p>Velvet Cappuccino <span>× 2</span></p></article>
+        </div>
+        <div class="kitchen-column active-column">
+          <div class="column-heading"><span class="column-indicator active-indicator"></span><h3>On the go</h3><span class="column-count">03</span></div>
+          <article class="kitchen-order active-order"><div class="kitchen-order-top"><span class="order-token">#039B</span><span class="prep-time">◷ &nbsp;4 min</span></div><p>Flat White <span>× 1</span></p><p>Butter Croissant <span>× 2</span></p><div class="progress-mini"><span></span></div><button type="button" class="ready-button">▣ &nbsp;Mark ready for pickup</button></article>
+          <p class="column-footnote">Marking ready updates the student's order tracker.</p>
+        </div>
+        <div class="kitchen-column completed-column">
+          <div class="column-heading"><span class="column-indicator done-indicator"></span><h3>Handed over</h3><span class="column-count">12</span></div>
+          <div class="completed-order"><span class="done-check">✓</span><span><strong>#038F · Cappuccino</strong><small>Collected · 12:32 pm</small></span></div>
+          <div class="completed-order"><span class="done-check">✓</span><span><strong>#038A · Iced Matcha</strong><small>Collected · 12:29 pm</small></span></div>
+          <div class="completed-order"><span class="done-check">✓</span><span><strong>#037E · Flat White</strong><small>Collected · 12:24 pm</small></span></div>
+          <span class="text-link archive-link">Recent order history</span>
+        </div>
+      </div>
+      <p class="demo-note">Vendor controls are a visual demo and are not connected to live order data.</p>
+    </section>
+  </main>
+  <footer class="footer"><a class="brand footer-brand" href="index.html"><span class="brand-mark">f.</span><span>find my <strong>spot</strong></span></a><p>Campus food, minus the wait. <span>Made for Strathmore.</span></p><a href="index.html">Back to discover ↑</a></footer>
+</body>
+</html>

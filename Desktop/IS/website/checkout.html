@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#641f32">
+  <meta name="description" content="Choose your pickup time and dining preference for your campus food order.">
+  <title>Checkout — Find My Spot</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="Find My Spot home"><span class="brand-mark">f.</span><span>find my <strong>spot</strong></span></a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a class="nav-link" href="index.html">Discover</a><a class="nav-link" href="menu.html">Menu</a><a class="nav-link active" aria-current="page" href="checkout.html">Checkout</a><a class="nav-link" href="order.html">My order</a><a class="nav-link" href="vendors.html">For vendors</a>
+    </nav>
+    <a class="cart-link" href="checkout.html" aria-label="Shopping bag, 2 items"><span class="cart-icon" aria-hidden="true">▱</span><span class="cart-label">My bag</span><span class="cart-count">2</span></a>
+  </header>
+  <main class="checkout-page">
+    <div class="page-wrap checkout-wrap">
+      <div class="checkout-intro"><p class="eyebrow">ALMOST TIME FOR SOMETHING GOOD</p><h1>Let's make it yours.</h1><p>Pick how you like it, then choose a time that works for you.</p><a class="checkout-back" href="menu.html">← &nbsp;Back to the menu</a></div>
+      <aside class="order-card checkout-card">
+        <div class="order-card-heading"><div><p class="eyebrow">YOUR NEXT DELICIOUS THING</p><h2>Order summary</h2></div><span class="bag-mark" aria-hidden="true">▱</span></div>
+        <div class="basket-label">YOUR ORDER <span>2 ITEMS</span></div>
+        <div class="basket-row"><span><strong>Iced Caramel Latte</strong><small>Oat milk · less ice</small></span><span>KES 220</span></div>
+        <div class="basket-row"><span><strong>Butter Croissant</strong><small>Freshly baked</small></span><span>KES 150</span></div>
+        <div class="basket-total"><span>Total</span><strong>KES 370</strong></div>
+        <div class="form-divider"></div>
+        <fieldset class="preference-field"><legend>Dining preference</legend><div class="segmented-control"><label><input type="radio" name="dining" checked><span>🥡 Takeaway</span></label><label><input type="radio" name="dining"><span>🍽 Eat in</span></label></div></fieldset>
+        <div class="pickup-heading"><h3>Choose a pickup time</h3><span>15 min slots</span></div>
+        <div class="pickup-slots">
+          <label class="slot busy-slot"><input type="radio" name="pickup"><span><strong>12:45 – 1:00</strong><small>● Highly congested</small></span></label>
+          <label class="slot moderate-slot"><input type="radio" name="pickup"><span><strong>1:00 – 1:15</strong><small>● Moderate traffic</small></span></label>
+          <label class="slot recommended-slot"><input type="radio" name="pickup" checked><span><strong>1:15 – 1:30</strong><small>● Recommended</small></span></label>
+        </div>
+        <fieldset class="payment-field"><legend>How would you like to pay?</legend>
+          <label class="payment-option"><input type="radio" name="payment" checked><span class="mpesa-mark">M</span><span><strong>M-Pesa</strong><small>Simulated STK push</small></span><span class="radio-visual"></span></label>
+          <label class="payment-option"><input type="radio" name="payment"><span class="student-mark">S</span><span><strong>Student ID balance</strong><small>Simulated campus card</small></span><span class="radio-visual"></span></label>
+        </fieldset>
+        <a class="primary-button" href="order.html">Place demo order · KES 370 <span aria-hidden="true">→</span></a>
+        <p class="secure-note">Demo only · No payment will be taken</p>
+      </aside>
+    </div>
+  </main>
+  <footer class="footer"><a class="brand footer-brand" href="index.html"><span class="brand-mark">f.</span><span>find my <strong>spot</strong></span></a><p>Campus food, minus the wait. <span>Made for Strathmore.</span></p><a href="index.html">Back to discover ↑</a></footer>
+</body>
+</html>
